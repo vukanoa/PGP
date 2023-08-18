@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>609</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PGP_Mitic_Davidovic</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListView" name="publicKeysLV">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>80</y>
+      <width>501</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListView" name="privateKeysLV">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>260</y>
+      <width>501</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>240</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Private Keys</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>0</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Keyrings</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Public Keys</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>609</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGenerate_Key">
+    <property name="title">
+     <string>Keys</string>
+    </property>
+    <addaction name="actionGenerate_new_Key"/>
+    <addaction name="actionRemove_existing_Key"/>
+    <addaction name="separator"/>
+    <addaction name="importKeyMenuBar"/>
+    <addaction name="exportPrivateKeyMenuBar"/>
+    <addaction name="exportPublicKeyMenuBar"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuMessages">
+    <property name="title">
+     <string>Messages</string>
+    </property>
+    <addaction name="actionSend_Message"/>
+    <addaction name="actionReceive_Message"/>
+   </widget>
+   <addaction name="menuGenerate_Key"/>
+   <addaction name="menuMessages"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGenerate_new_Key">
+   <property name="text">
+    <string>Generate new Key</string>
+   </property>
+  </action>
+  <action name="actionRemove_existing_Key">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Remove existing Key</string>
+   </property>
+  </action>
+  <action name="actionImport_Key">
+   <property name="text">
+    <string>Import Key</string>
+   </property>
+  </action>
+  <action name="actionExport_Key">
+   <property name="text">
+    <string>Export Key</string>
+   </property>
+  </action>
+  <action name="importKeyMenuBar">
+   <property name="text">
+    <string>Import Key</string>
+   </property>
+  </action>
+  <action name="exportPublicKeyMenuBar">
+   <property name="text">
+    <string>Export Public Key</string>
+   </property>
+  </action>
+  <action name="actionSend_Message">
+   <property name="text">
+    <string>Send Message</string>
+   </property>
+  </action>
+  <action name="actionReceive_Message">
+   <property name="text">
+    <string>Receive Message</string>
+   </property>
+  </action>
+  <action name="actionShow_Keyrings">
+   <property name="text">
+    <string>Show Keyrings</string>
+   </property>
+  </action>
+  <action name="exportPrivateKeyMenuBar">
+   <property name="text">
+    <string>Export Private Key</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
